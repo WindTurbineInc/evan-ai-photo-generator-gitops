@@ -1,0 +1,15 @@
+app:
+  name: evan-ai-photo-generator-app
+  namespace: evan-ai
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/evan-ai-photo-generator
+  org: WindTurbineInc
+  name: evan-ai-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: evan-ai/photo-generator-app
+  tag: latest
